@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxePurse - Purse & Fashion Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">LuxePurse</div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+            <p class="small-title">WELCOME TO LUXEPURSE</p>
+
+            <h1>
+                Discover Your
+                <span>Perfect Purse</span>
+            </h1>
+
+            <p>
+                Explore beautiful purses, fashion tips and the latest
+                trends in handbags.
+            </p>
+
+            <a href="#collection" class="btn">Explore Collection</a>
+        </div>
+
+    </section>
+
+
+    <!-- About Intro -->
+    <section class="intro">
+
+        <h2>Style Meets Elegance</h2>
+
+        <p>
+            LuxePurse is a fashion blogging website dedicated to
+            handbags and purses. Discover different styles, learn
+            how to choose the right purse and explore our collection.
+        </p>
+
+    </section>
+
+
+    <!-- Collection -->
+    <section id="collection" class="section">
+
+        <h2 class="section-title">Our Purse Collection</h2>
+
+        <div class="product-grid">
+
+            <!-- Product 1 -->
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80"
+                     alt="Classic Handbag">
+
+                <div class="product-info">
+
+                    <h3>Classic Handbag</h3>
+
+                    <p>
+                        Elegant handbag perfect for everyday use.
+                    </p>
+
+                    <div class="product-bottom">
+                        <span>₹1,499</span>
+
+                        <button onclick="addFavourite('Classic Handbag')">
+                            ♡ Favourite
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&w=700&q=80"
+                     alt="Luxury Purse">
+
+                <div class="product-info">
+
+                    <h3>Luxury Purse</h3>
+
+                    <p>
+                        Stylish purse designed for special occasions.
+                    </p>
+
+                    <div class="product-bottom">
+                        <span>₹2,299</span>
+
+                        <button onclick="addFavourite('Luxury Purse')">
+                            ♡ Favourite
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=700&q=80"
+                     alt="Shoulder Bag">
+
+                <div class="product-info">
+
+                    <h3>Shoulder Bag</h3>
+
+                    <p>
+                        Comfortable shoulder bag for daily fashion.
+                    </p>
+
+                    <div class="product-bottom">
+                        <span>₹1,799</span>
+
+                        <button onclick="addFavourite('Shoulder Bag')">
+                            ♡ Favourite
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=700&q=80"
+                     alt="Mini Purse">
+
+                <div class="product-info">
+
+                    <h3>Mini Purse</h3>
+
+                    <p>
+                        Small and stylish purse for simple outings.
+                    </p>
+
+                    <div class="product-bottom">
+                        <span>₹999</span>
+
+                        <button onclick="addFavourite('Mini Purse')">
+                            ♡ Favourite
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 5 -->
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=700&q=80"
+                     alt="Fashion Bag">
+
+                <div class="product-info">
+
+                    <h3>Fashion Bag</h3>
+
+                    <p>
+                        Trendy design for a modern fashion look.
+                    </p>
+
+                    <div class="product-bottom">
+                        <span>₹1,899</span>
+
+                        <button onclick="addFavourite('Fashion Bag')">
+                            ♡ Favourite
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Product 6 -->
+            <div class="product-card">
+
+                <img src="https://images.unsplash.com/photo-1575890318083-3e4d6d2b2a6a?auto=format&fit=crop&w=700&q=80"
+                     alt="Leather Bag">
+
+                <div class="product-info">
+
+                    <h3>Leather Bag</h3>
+
+                    <p>
+                        Classic leather-style bag with a premium look.
+                    </p>
+
+                    <div class="product-bottom">
+                        <span>₹2,499</span>
+
+                        <button onclick="addFavourite('Leather Bag')">
+                            ♡ Favourite
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Favourite Section -->
+    <section class="favourite-section">
+
+        <h2>Your Favourite Purses</h2>
+
+        <p id="favouriteMessage">
+            No favourite purse added yet.
+        </p>
+
+        <div id="favouriteList"></div>
+
+    </section>
+
+
+    <!-- Blog -->
+    <section id="blog" class="section blog-section">
+
+        <h2 class="section-title">Latest From Our Blog</h2>
+
+        <div class="blog-grid">
+
+            <article class="blog-card">
+
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=700&q=80"
+                     alt="Purse Fashion">
+
+                <div class="blog-content">
+
+                    <span>Fashion Tips</span>
+
+                    <h3>How to Choose the Perfect Purse</h3>
+
+                    <p>
+                        Choosing the right purse depends on your
+                        lifestyle, outfit and personal style.
+                    </p>
+
+                    <a href="#">Read More →</a>
+
+                </div>
+
+            </article>
+
+
+            <article class="blog-card">
+
+                <img src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&w=700&q=80"
+                     alt="Purse Trends">
+
+                <div class="blog-content">
+
+                    <span>Trends</span>
+
+                    <h3>Top Purse Trends This Season</h3>
+
+                    <p>
+                        Discover popular purse styles and designs
+                        that are becoming fashion favourites.
+                    </p>
+
+                    <a href="#">Read More →</a>
+
+                </div>
+
+            </article>
+
+
+            <article class="blog-card">
+
+                <img src="https://images.unsplash.com/photo-1566150905458-1bf1fc113f0d?auto=format&fit=crop&w=700&q=80"
+                     alt="Purse Care">
+
+                <div class="blog-content">
+
+                    <span>Care Guide</span>
+
+                    <h3>How to Take Care of Your Purse</h3>
+
+                    <p>
+                        Simple tips that can help you keep your
+                        favourite purse clean and beautiful.
+                    </p>
+
+                    <a href="#">Read More →</a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about">
+
+        <div class="about-content">
+
+            <div>
+                <p class="small-title">ABOUT US</p>
+
+                <h2>More Than Just a Purse Blog</h2>
+
+                <p>
+                    LuxePurse is created for people who love handbags,
+                    fashion and stylish accessories. Our goal is to
+                    provide useful fashion information and introduce
+                    different purse styles.
+                </p>
+
+                <p>
+                    From everyday handbags to elegant party purses,
+                    our blog helps you discover your personal style.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact section">
+
+        <h2 class="section-title">Contact Us</h2>
+
+        <form id="contactForm">
+
+            <input type="text" id="contactName"
+                   placeholder="Your Name">
+
+            <input type="email" id="contactEmail"
+                   placeholder="Your Email">
+
+            <textarea id="contactMessage"
+                      placeholder="Your Message"></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Login -->
+    <section id="login" class="login-section">
+
+        <div class="login-box">
+
+            <h2>Login</h2>
+
+            <p>Login to save your favourite purses.</p>
+
+            <form id="loginForm">
+
+                <input type="email"
+                       id="loginEmail"
+                       placeholder="Email">
+
+                <input type="password"
+                       id="loginPassword"
+                       placeholder="Password">
+
+                <button type="submit" class="btn">
+                    Login
+                </button>
+
+            </form>
+
+            <p id="loginMessage"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">LuxePurse</div>
+
+        <p>
+            © 2026 LuxePurse. All Rights Reserved.
+        </p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

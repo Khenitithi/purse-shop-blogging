@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #fff;
+    line-height: 1.6;
+}
+
+
+/* Navigation */
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #9b5c50;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: 600px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.35)
+        ),
+        url("https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1600&q=85");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-text {
+    max-width: 600px;
+    color: white;
+}
+
+.small-title {
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    display: block;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    background: #222;
+    color: white;
+    border: none;
+
+    padding: 13px 25px;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.btn:hover {
+    background: #9b5c50;
+}
+
+
+/* Intro */
+
+.intro {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding: 80px 30px;
+}
+
+.intro h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+
+/* Sections */
+
+.section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 30px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+
+/* Products */
+
+.product-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.product-card {
+    background: white;
+    border: 1px solid #eeeeee;
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.product-info p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-bottom span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.product-bottom button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #9b5c50;
+    font-weight: bold;
+}
+
+
+/* Favourite */
+
+.favourite-section {
+    background: #f7f4f2;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.favourite-section h2 {
+    margin-bottom: 15px;
+}
+
+#favouriteList {
+    margin-top: 20px;
+}
+
+.favourite-item {
+    display: inline-block;
+    background: white;
+    padding: 10px 20px;
+    margin: 5px;
+
+    border: 1px solid #ddd;
+}
+
+.remove-btn {
+    margin-left: 10px;
+    border: none;
+    background: #222;
+    color: white;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+
+/* Blog */
+
+.blog-section {
+    background: white;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.blog-card {
+    border: 1px solid #eeeeee;
+    background: white;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 25px;
+}
+
+.blog-content span {
+    color: #9b5c50;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.blog-content h3 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.blog-content p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.blog-content a {
+    color: #222;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* About */
+
+.about {
+    background: #f7f4f2;
+    padding: 90px 30px;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 15px;
+}
+
+
+/* Contact */
+
+.contact {
+    text-align: center;
+}
+
+#contactForm {
+    max-width: 600px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    outline: none;
+
+    font-size: 15px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+
+/* Login */
+
+.login-section {
+    background: #f7f4f2;
+    padding: 80px 30px;
+}
+
+.login-box {
+    max-width: 450px;
+    margin: auto;
+
+    background: white;
+    padding: 40px;
+
+    text-align: center;
+}
+
+.login-box h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* Footer */
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer-logo {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin-top: 15px;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #d5a99d;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .product-grid,
+    .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 30px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .product-grid,
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+}
